@@ -8,7 +8,7 @@ namespace Practica14
         [STAThread]
         static void Main()
         {
-            Application.Run(new FrmPrincipal());
+            Application.Run(new FrmLogin());
         }
     }
 }

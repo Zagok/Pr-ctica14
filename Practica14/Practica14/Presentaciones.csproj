@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,6 +46,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAddHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddHerramientas.Designer.cs">
+      <DependentUpon>FrmAddHerramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddRefacciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddRefacciones.Designer.cs">
+      <DependentUpon>FrmAddRefacciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddUsuario.Designer.cs">
+      <DependentUpon>FrmAddUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHerramientas.Designer.cs">
+      <DependentUpon>FrmHerramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRefacciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRefacciones.Designer.cs">
+      <DependentUpon>FrmRefacciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrar.Designer.cs">
+      <DependentUpon>FrmRegistrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuario.Designer.cs">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
