@@ -14,7 +14,7 @@ namespace Manejadores
         AccesoBase ab = new AccesoBase("localhost", "root", "", "agencia_automotriz", 3306);
         public string Guardar(EntidadUsuario eu)
         {
-            return ab.Comando(string.Format("insert into usuario values(null,'{0}','{1}', '{2}', '{3}', '{4}', '{5}')", eu._RFC, eu._Nombre, eu._ApellidoP, eu._ApellidoM, eu._Fechanacimiento, eu._FKIDPermisos));
+            return ab.Comando(string.Format("insert into usuario values(null,'{0}','{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", eu._RFC, eu._Contrasena, eu._Nombre, eu._ApellidoP, eu._ApellidoM, eu._Fechanacimiento, eu._FKIDPermisos));
         }
 
 

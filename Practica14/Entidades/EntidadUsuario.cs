@@ -2,10 +2,11 @@
 {
     public class EntidadUsuario
     {
-        public EntidadUsuario(int iDUsuario, string rFC, string nombre, string apellidoP, string apellidoM, string fechanacimiento, string fKIDPermisos)
+        public EntidadUsuario(int iDUsuario, string rFC, string contrasena, string nombre, string apellidoP, string apellidoM, string fechanacimiento, string fKIDPermisos)
         {
             _IDUsuario = iDUsuario;
             _RFC = rFC;
+            _Contrasena = contrasena;
             _Nombre = nombre;
             _ApellidoP = apellidoP;
             _ApellidoM = apellidoM;
@@ -15,6 +16,7 @@
 
         public int _IDUsuario { get; set; }
         public string _RFC { get; set; }
+        public string _Contrasena { get; set; }
         public string _Nombre { get; set; }
         public string _ApellidoP { get; set; }
         public string _ApellidoM { get; set; }

@@ -34,6 +34,17 @@ namespace AccesoDatos
             }
 
         }
+        public string ConsultaRetorno(string q)
+        {
+            _conn.Open();
+
+            var command = new MySqlCommand(q, _conn);
+            command.ExecuteNonQuery();
+            string v = Convert.ToString(command.ExecuteScalar());
+
+            _conn.Close();
+            return v;
+        }
         public DataSet Mostrar(string q, string tabla)
         {
             DataSet ds = new DataSet();

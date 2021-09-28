@@ -1,0 +1,16 @@
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\bin\Debug\Practica14.exe
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\bin\Debug\Practica14.pdb
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\bin\Debug\Entidades.dll
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\bin\Debug\Manejadores.dll
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\bin\Debug\AccesoDatos.dll
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\bin\Debug\MySql.Data.dll
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\bin\Debug\Entidades.pdb
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\bin\Debug\Manejadores.pdb
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\bin\Debug\AccesoDatos.pdb
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Presentaciones.csproj.AssemblyReference.cache
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Practica14.FrmLogin.resources
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Presentaciones.csproj.GenerateResource.cache
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Presentaciones.csproj.CoreCompileInputs.cache
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Presentaciones.csproj.CopyComplete
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Practica14.exe
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Practica14.pdb
