@@ -2,6 +2,10 @@
 {
     public class EntidadUsuario
     {
+        public EntidadUsuario()
+        {
+        }
+
         public EntidadUsuario(int iDUsuario, string rFC, string contrasena, string nombre, string apellidoP, string apellidoM, string fechanacimiento, string fKIDPermisos)
         {
             _IDUsuario = iDUsuario;
