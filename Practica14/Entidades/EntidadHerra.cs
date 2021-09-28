@@ -8,6 +8,10 @@ namespace Entidades
 {
     public class EntidadHerra
     {
+        public EntidadHerra()
+        {
+        }
+
         public EntidadHerra(string codigoherra, string nombre, string medida, string descripcion, string marca)
         {
             _Codigoherra = codigoherra;

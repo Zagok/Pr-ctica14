@@ -13,6 +13,7 @@ namespace Practica14
 {
     public partial class FrmLogin : Form
     {
+        public static string val = "";
         ManejadorLoginRegistro mlr;
         public FrmLogin()
         {
@@ -79,18 +80,16 @@ namespace Practica14
             FrmRegistrar fr = new FrmRegistrar();
             fr.Show();
         }
-        public static string userAdmin, passAdmin;
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            userAdmin = txtUsuario.Text;
-            passAdmin = txtContrasena.Text;
             int v = mlr.ValidarUsuario(txtUsuario.Text, txtContrasena.Text);
             if (v == 1)
             {
-
                 this.Hide();
+                val = mlr.Permiso(txtUsuario.Text);
                 FrmPrincipal fp = new FrmPrincipal();
                 fp.Show();
+      
             }
             else
             {

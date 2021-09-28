@@ -6,6 +6,10 @@
         {
         }
 
+        public EntidadUsuario(object idproducto, string text1, object text2, double v)
+        {
+        }
+
         public EntidadUsuario(int iDUsuario, string rFC, string contrasena, string nombre, string apellidoP, string apellidoM, string fechanacimiento, string fKIDPermisos)
         {
             _IDUsuario = iDUsuario;

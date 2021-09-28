@@ -193,9 +193,10 @@ namespace Practica14
                 MessageBox.Show("Verifique que las contraseñas coincidan.");
             }
         }
-
+        public static string permiso;
         private void GuardarRegistro()
         {
+            permiso = eu._FKIDPermisos;
             eu._RFC = txtUsuario.Text;
             eu._Contrasena = txtContraseña.Text;
             eu._Nombre = txtNombre.Text;

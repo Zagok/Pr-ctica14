@@ -2,6 +2,10 @@
 {
     public class EntidadRefa
     {
+        public EntidadRefa()
+        {
+        }
+
         public EntidadRefa(string codigorefa, string nombre, string descripcion, string marca)
         {
             _Codigorefa = codigorefa;

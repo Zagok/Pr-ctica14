@@ -18,9 +18,9 @@ namespace Manejadores
         }
 
 
-        public void Mostrar(DataGridView tabla, string dato)
+        public void Mostrar(string dato, DataGridView tabla)
         {
-            tabla.DataSource = ab.Mostrar(string.Format("select * from modulo_refacciones where nombre like '%{0}%' or codigorefa like '%{0}%'", dato), "modulo_refacciones").Tables["modulo_refacciones"];
+            tabla.DataSource = ab.Mostrar(string.Format("select * from modulo_refacciones where nombre like '%{0}%' or codigorefa like '%{0}%';", dato), "modulo_refacciones").Tables["modulo_refacciones"];
             tabla.AutoResizeColumns();
         }
 
