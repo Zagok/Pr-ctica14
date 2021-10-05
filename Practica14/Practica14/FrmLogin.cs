@@ -67,13 +67,6 @@ namespace Practica14
                 }
             }
         }
-
-        private void btnRegistrarse_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FrmRegistrar fr = new FrmRegistrar();
-            fr.Show();
-        }
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             int v = mlr.ValidarUsuario(txtUsuario.Text, txtContrasena.Text);
@@ -89,6 +82,11 @@ namespace Practica14
             {
                 MessageBox.Show("Error, Usuario y/o Contraseña Incorrectos.");
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

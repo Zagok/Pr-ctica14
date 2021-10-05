@@ -11,7 +11,7 @@ namespace Practica14
         {
             InitializeComponent();
             btnAdmin.Hide();
-            if(FrmLogin.val == "ADMIN")
+            if(FrmLogin.val == "ADMINISTRADOR")
             {
                 btnAdmin.Show();
             }
@@ -52,6 +52,13 @@ namespace Practica14
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             AbrirFrmHijo(new FrmAdmin());
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmLogin fl = new FrmLogin();
+            fl.Show();
         }
     }
 }

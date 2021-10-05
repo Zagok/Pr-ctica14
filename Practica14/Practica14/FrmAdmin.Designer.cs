@@ -30,12 +30,13 @@ namespace Practica14
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dtgDatos = new System.Windows.Forms.DataGridView();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.dtgDatos = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnPerfiles = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDatos)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +44,7 @@ namespace Practica14
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.btnPerfiles);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.dtgDatos);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -50,6 +52,34 @@ namespace Practica14
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(766, 531);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(264, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(272, 75);
+            this.label2.TabIndex = 73;
+            this.label2.Text = "USUARIOS";
+            // 
+            // dtgDatos
+            // 
+            this.dtgDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgDatos.Location = new System.Drawing.Point(30, 166);
+            this.dtgDatos.Name = "dtgDatos";
+            this.dtgDatos.RowHeadersWidth = 51;
+            this.dtgDatos.RowTemplate.Height = 24;
+            this.dtgDatos.Size = new System.Drawing.Size(704, 295);
+            this.dtgDatos.TabIndex = 78;
+            this.dtgDatos.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgDatos_CellEnter);
             // 
             // btnEdit
             // 
@@ -98,33 +128,16 @@ namespace Practica14
             this.txtBuscar.TabIndex = 79;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
-            // dtgDatos
+            // btnPerfiles
             // 
-            this.dtgDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgDatos.Location = new System.Drawing.Point(30, 166);
-            this.dtgDatos.Name = "dtgDatos";
-            this.dtgDatos.RowHeadersWidth = 51;
-            this.dtgDatos.RowTemplate.Height = 24;
-            this.dtgDatos.Size = new System.Drawing.Size(704, 295);
-            this.dtgDatos.TabIndex = 78;
-            this.dtgDatos.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgDatos_CellEnter);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(264, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(272, 75);
-            this.label2.TabIndex = 73;
-            this.label2.Text = "USUARIOS";
+            this.btnPerfiles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPerfiles.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerfiles.Location = new System.Drawing.Point(348, 467);
+            this.btnPerfiles.Name = "btnPerfiles";
+            this.btnPerfiles.Size = new System.Drawing.Size(125, 32);
+            this.btnPerfiles.TabIndex = 83;
+            this.btnPerfiles.Text = "PERFILES";
+            this.btnPerfiles.UseVisualStyleBackColor = true;
             // 
             // FrmAdmin
             // 
@@ -155,5 +168,6 @@ namespace Practica14
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.DataGridView dtgDatos;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnPerfiles;
     }
 }

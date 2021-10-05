@@ -18,7 +18,7 @@ namespace Practica14
         int i = 0;
         void Actualizar()
         {
-            mu.Mostrar(dtgDatos, txtBuscar.Text);
+            mu.Mostrar(txtBuscar.Text, dtgDatos);
         }
         private void dtgDatos_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
@@ -30,7 +30,7 @@ namespace Practica14
             eu._ApellidoP = dtgDatos.CurrentRow.Cells["apellidop"].Value.ToString();
             eu._ApellidoM = dtgDatos.CurrentRow.Cells["apellidom"].Value.ToString();
             eu._Fechanacimiento = dtgDatos.CurrentRow.Cells["fechanacimiento"].Value.ToString();
-            eu._FKIDPermisos = dtgDatos.CurrentRow.Cells["fkidpermisos"].Value.ToString();
+            eu._FKIDPermisos = dtgDatos.CurrentRow.Cells["fkidperfil"].Value.ToString();
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)

@@ -94,12 +94,6 @@
     <Compile Include="FrmRefacciones.Designer.cs">
       <DependentUpon>FrmRefacciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistrar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistrar.Designer.cs">
-      <DependentUpon>FrmRegistrar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -131,9 +125,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRefacciones.resx">
       <DependentUpon>FrmRefacciones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrar.resx">
-      <DependentUpon>FrmRegistrar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

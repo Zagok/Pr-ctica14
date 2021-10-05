@@ -31,14 +31,14 @@ namespace Practica14
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.chbMostrarC = new System.Windows.Forms.CheckBox();
             this.txtContrasena = new System.Windows.Forms.TextBox();
             this.pbContraseña = new System.Windows.Forms.PictureBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.pbUsuario = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnIniciarSesion = new System.Windows.Forms.Button();
-            this.btnRegistrarse = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbContraseña)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).BeginInit();
@@ -47,7 +47,7 @@ namespace Practica14
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Controls.Add(this.btnRegistrarse);
+            this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnIniciarSesion);
             this.panel1.Controls.Add(this.chbMostrarC);
             this.panel1.Controls.Add(this.txtContrasena);
@@ -60,6 +60,17 @@ namespace Practica14
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(453, 454);
             this.panel1.TabIndex = 0;
+            // 
+            // btnIniciarSesion
+            // 
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.Location = new System.Drawing.Point(154, 386);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Size = new System.Drawing.Size(166, 32);
+            this.btnIniciarSesion.TabIndex = 51;
+            this.btnIniciarSesion.Text = "Iniciar Sesión";
+            this.btnIniciarSesion.UseVisualStyleBackColor = true;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
             // chbMostrarC
             // 
@@ -134,27 +145,16 @@ namespace Practica14
             this.label1.TabIndex = 45;
             this.label1.Text = "LOGIN";
             // 
-            // btnIniciarSesion
+            // btnClose
             // 
-            this.btnIniciarSesion.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciarSesion.Location = new System.Drawing.Point(70, 386);
-            this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(166, 32);
-            this.btnIniciarSesion.TabIndex = 51;
-            this.btnIniciarSesion.Text = "Iniciar Sesión";
-            this.btnIniciarSesion.UseVisualStyleBackColor = true;
-            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
-            // 
-            // btnRegistrarse
-            // 
-            this.btnRegistrarse.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarse.Location = new System.Drawing.Point(251, 386);
-            this.btnRegistrarse.Name = "btnRegistrarse";
-            this.btnRegistrarse.Size = new System.Drawing.Size(166, 32);
-            this.btnRegistrarse.TabIndex = 52;
-            this.btnRegistrarse.Text = "Registrarse";
-            this.btnRegistrarse.UseVisualStyleBackColor = true;
-            this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
+            this.btnClose.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(409, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(41, 30);
+            this.btnClose.TabIndex = 53;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // FrmLogin
             // 
@@ -183,7 +183,7 @@ namespace Practica14
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.PictureBox pbUsuario;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnRegistrarse;
         private System.Windows.Forms.Button btnIniciarSesion;
+        private System.Windows.Forms.Button btnClose;
     }
 }

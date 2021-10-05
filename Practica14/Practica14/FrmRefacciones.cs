@@ -15,6 +15,19 @@ namespace Practica14
             er = new EntidadRefa();
             mr = new ManejadorRefa();
             InitializeComponent();
+            btnEdit.Hide();
+            btnEliminar.Hide();
+            btnAdd.Hide();
+            if (FrmLogin.val == "ADMINISTRADOR")
+            {
+                btnEdit.Show();
+                btnEliminar.Show();
+                btnAdd.Show();
+            }
+            else if (FrmLogin.val == "VENDEDOR")
+            {
+                btnAdd.Show();
+            }
         }
         int i = 0;
         void Actualizar()

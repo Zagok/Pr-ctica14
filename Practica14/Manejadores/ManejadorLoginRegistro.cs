@@ -35,16 +35,9 @@ namespace Manejadores
             }
             return c;
         }
-        public string Permisos(string permiso)
-        {
-            string consulta = string.Format("SELECT idpermisos FROM permisos WHERE idpermisos = '{0}';", permiso);
-            string c = _base.ConsultaRetorno(consulta);
-            return c;
-        }
-
         public  string Permiso(string rfc)
         {
-            string consulta = String.Format("select fkidpermisos from usuario where rfc = '{0}';",rfc);
+            string consulta = String.Format("select fkidperfil from usuario where rfc = '{0}';",rfc);
             string c = _base.ConsultaRetorno(consulta);
             return c;
      
