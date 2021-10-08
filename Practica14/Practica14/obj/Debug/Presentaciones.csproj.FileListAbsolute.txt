@@ -19,3 +19,4 @@ C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Practica14.FrmHerr
 C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Practica14.FrmRefacciones.resources
 C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Practica14.FrmAdmin.resources
 C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Practica14.FrmAddUsuario.resources
+C:\Users\gomez\Desktop\GitP14\Practica14\Practica14\obj\Debug\Practica14.FrmAddPerfiles.resources

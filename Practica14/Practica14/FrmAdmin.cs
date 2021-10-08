@@ -8,11 +8,13 @@ namespace Practica14
     public partial class FrmAdmin : Form
     {
         public static EntidadUsuario eu;
+        public static EntidadPerfiles ep;
         ManejadorUsuario mu;
         public FrmAdmin()
         {
             eu = new EntidadUsuario();
             mu = new ManejadorUsuario();
+            ep = new EntidadPerfiles();
             InitializeComponent();
         }
         int i = 0;
@@ -76,6 +78,15 @@ namespace Practica14
             {
                 MessageBox.Show("Debe elegir un registro");
             }
+        }
+
+        private void btnPerfiles_Click(object sender, EventArgs e)
+        {
+            ep._IDPerfil = "";
+            ep._FKIDPermisos = "";
+            FrmAddPerfiles fau = new FrmAddPerfiles();
+            fau.ShowDialog();
+            Actualizar();
         }
     }
 }

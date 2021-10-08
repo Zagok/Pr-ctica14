@@ -138,6 +138,7 @@ namespace Practica14
             this.btnPerfiles.TabIndex = 83;
             this.btnPerfiles.Text = "PERFILES";
             this.btnPerfiles.UseVisualStyleBackColor = true;
+            this.btnPerfiles.Click += new System.EventHandler(this.btnPerfiles_Click);
             // 
             // FrmAdmin
             // 

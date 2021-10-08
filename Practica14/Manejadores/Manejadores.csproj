@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="ManejadorHerra.cs" />
     <Compile Include="ManejadorLoginRegistro.cs" />
+    <Compile Include="ManejadorPerfiles.cs" />
     <Compile Include="ManejadorRefa.cs" />
     <Compile Include="ManejadorUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
